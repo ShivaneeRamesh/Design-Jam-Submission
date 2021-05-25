@@ -10,7 +10,11 @@ margin: 0;
 padding: 0;
 }
 body{
-  font-family: sans-serif;
+  font-family:sans-serif;
+}
+.background{
+  margin-left:90px;
+  margin-right: 90px;
 }
 	.topnav {
   overflow: hidden;
@@ -26,6 +30,7 @@ body{
         justify-content: center;
       }
 p.heading{
+  display:block
   font-weight: bold;
   font-size:50px;
   text-align: left;
@@ -35,6 +40,7 @@ p.heading{
   margin-left:25px;
 }
 p.heading2{
+  display:block
   font-weight: bold;
   font-size:25px;
   text-align: left;
@@ -45,6 +51,7 @@ p.heading2{
   margin-right:0px;
 }
 p.content1{
+  display:block
   font-weight: normal;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
@@ -67,6 +74,7 @@ p.dat{
   margin-top: 70px;
 }
 p.heading3{
+  display:block
   font-weight: bold;
   font-size:35px;
   text-align: left;
@@ -84,8 +92,9 @@ img:not(.img){
   margin-right:auto;
   }
   .content{
+    display:block;
 font-weight:normal;
-font-size:22px;
+font-size:18px;
 text-align: justify-all;
 color:#000;
 margin-bottom: 15px;
@@ -140,13 +149,13 @@ font-family: sans-serif;
 .topnav .icon {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
     align-items:top;
     flex-flow: column nowrap;
   }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -162,13 +171,32 @@ font-family: sans-serif;
   margin-left:auto;
   margin-right:auto;
   }
+  .background{
+    margin:10px;
+  }
+  .content,.heading,.heading2,.heading3,.content1{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content1
+  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .highlight{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1024px){
   .img{
     display:none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -184,21 +212,21 @@ font-family: sans-serif;
 </style>
 </head>
 <body>
-<div class ="background">
-<div class="topnav" id="myTopnav">
- <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/homepage.html"></a>
-  <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/aboutfinal.html">About Him</a>
-  <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/careerfinal.html">Career</a>
+  <div class="topnav" id="myTopnav">
+ <a target="_self" href="../index.html">Home</a>
+  <a target="_self" href="./aboutfinal.html">About Him</a>
+  <a target="_self" href="./careerfinal.html">Career</a>
 
-  <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/achievementsfinal.html">Achievements</a>
-  <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/newsfinal.html">Latest News</a>
-  <a target="_self" href="file:///C:/Users/shiva/OneDrive/Desktop/project%20we%20design/final%20webpage/fanwall.html">Yellove</a>
+  <a target="_self" href="./achievementsfinal.html">Achievements</a>
+  <a target="_self" href="./newsfinal.html">Latest News</a>
+  <a target="_self" href="./fanwall.html">Yellove</a>
 
 
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
+<div class="background">
 <div class="container">
         <div class="highlight">
        <p class="heading">Highlights</p>
@@ -231,7 +259,7 @@ font-family: sans-serif;
       <p class="dat">May 22, 2021, 12:11 PM IST</p>
     </div>
       <div class="img">
-        <img src="dhoni strip.png"></img>
+        <img src="../dhoni strip.png"></img>
       </div>
     </div>
     <br>
@@ -251,7 +279,7 @@ font-family: sans-serif;
         <p class="content"><b>Here's the video:</b></p>
         <a href="https://www.instagram.com/p/CPDCEE6HMXc/">
           <div class="image">
-          <img src="news1.png"style="max-width:100%"  width="500px" height="500px"></img>
+          <img src="news1.png"style="max-width:90%"  width="500px" height="500px"></img>
         </div>
         </a>
         <hr>
@@ -276,7 +304,7 @@ font-family: sans-serif;
 
   <p class="heading3" id="news3">IPL 2021: CSK skipper MS Dhoni imitates Ravindra Jadeja’s “sword” celebration, video goes viral – WATCH</p>
     <p class="content">The ‘sword celebration’ is a signature move of Jadeja when he reaches a milestone with the bat. Jadeja celebrates his milestone by using the bat like a sword and pretending to get ready for a fight like the kings would.</p>
-    <img src="https://english.cdn.zeenews.com/sites/default/files/2021/05/17/936964-dhoni-jadeja-1.jpg"style="max-width:100%"width="600px" height="400px">
+    <img src="https://english.cdn.zeenews.com/sites/default/files/2021/05/17/936964-dhoni-jadeja-1.jpg"style="max-width:90%"width="600px" height="400px">
     <p class="content">It is no secret that MS Dhoni and Ravindra Jadeja are good friends! For CSK fans who follow CSK closely, it is known that Dhoni is fond of the all-rounder. The former India captain gave a glimpse of his fondness for Jadeja when he did a ‘sword celebration’ during the IPL. The ‘sword celebration’ is a signature move of Jadeja when he reaches a milestone with the bat. Jadeja celebrates his milestone by using the bat like a sword and pretending to get ready for a fight like the kings would.
       <br><br>
     During CSK’s practice session in the now-suspended IPL 2021, Dhoni performed the same celebration with a smile on his face even as Robin Uthappa looked along. The video was posted by CSK’s official Twitter handle days after the lucrative league was suspended due to the bubble breach and numerous COVID-19 cases in the teams.
@@ -284,16 +312,17 @@ font-family: sans-serif;
         </p>
         <p class="content"><b>Here's the video</b></p>
         <a href="https://twitter.com/ChennaiIPL/status/1393926917204574212">
-          <img src="news3.png" style="max-width:100%" width="300px" height="500px"></img>
+          <img src="news3.png" style="max-width:90%" width="300px" height="500px"></img>
         </a>
         <hr>
 
 
          <p class="heading3" id="news4">‘Just go bowl’: Robin Uthappa recalls when MS Dhoni refused to entertain Sreesanth’s ‘Mankad’ appeals</div></p>
           <p class="content">Robin Uthappa has revealed a hilarious incident featuring S Sreesanth, MS Dhoni and the Australia cricket team, narrating how the former India captain was good a managing the fast bowler from Kerala. The incident took place during a T20I match between India and Australia. A week after India had lifted the T20 World Cup in South Africa, they hosted Australia for a T20 match in Hyderabad, with Uthappa explaining what had transpired.</p>
-    <img src="https://images.hindustantimes.com/img/2021/05/19/550x309/sreesanth-dhoni-getty_1621409679931_1621409687419.jpg" width="600px" height="400px" style="max-width:100%">
+    <img src="https://images.hindustantimes.com/img/2021/05/19/550x309/sreesanth-dhoni-getty_1621409679931_1621409687419.jpg" width="600px" height="400px" style="max-width:90%">
     <p class="content">"It was just after the World Cup, and we were playing Australia in Hyderabad. And I think it was either Andrew Symonds or Hussey who had backed up. And then Sree (Sreesanth) stopped, took the stumps off and goes 'How is that? How is that?' So MS came running from there, pulled him and said 'just go bowl bro'. Someone who actually handled him really well was MS," Uthappa told stand-up comedian Sorabh Pant on his YouTube show 'Wake Up With Sorabh'.
       <br><br></p></div>
+    </div>
    
 
 
