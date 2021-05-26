@@ -43,7 +43,8 @@ ul{
   display:block;
   font-family:Verdana,sans-serif;
   line-height: 1.5; 
-  opacity: 0.8;}
+  opacity: 0.8;
+}
   .whole{
     margin:90px;
   }
@@ -105,7 +106,7 @@ p.content{
   font-size: 17px;
 }
 .grps a:link {
-  text-decoration: none;
+  text-decoration: underline;
   color:#AD974F
 }
 .grps a:visited {
@@ -125,7 +126,7 @@ p.content{
   color:#f2f2f2;
 }
 .grps ul a:link {
-  text-decoration: none;
+  text-decoration: underline;
   color:#f2f2f2;
 }
 .grps ul a:visited {
@@ -163,17 +164,38 @@ p.content{
   margin-right: auto;
 
 }
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}
 @media screen and (max-width: 800px) {
+  p.content{
+    font-size: 15px;
+  }
+  p.heading2{
+    font-size: 18px;
+  }
+  p.heading{
+    font-size: 25px;
+  }
   .container {
     flex-direction: column;
     align-items:top;
     flex-flow: column nowrap;
+    font-size: 15px;
   }
   .whole{margin:0px;}
   .box{
     margin-left: 10px;
     margin-right: 10px;
-    padding: 15px;
     padding-top: 25px;
   }
    img{
@@ -189,6 +211,8 @@ p.content{
     float: right;
     display: block;
   }
+  .blink{
+    width:100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -198,13 +222,18 @@ p.content{
     right: 0;
     top: 0;
   }
+  ul{
+    font-size: 14px;
+  }
   .grps{
   display:block;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
-
-}
+  }
+  span{
+    font-size: 18px;
+  }
 .img1{
     margin-left:10px;
   }
@@ -257,6 +286,8 @@ p.content{
        </ul>
    </div>
 </div>-->
+<div class="blink">
+<img src="https://resources.pulse.icc-cricket.com/ICC/photo/2019/09/12/904104c7-f3b8-48d7-b2b5-a4f56c543c99/Dhoni-ICC-trophy-collage.png" style="display: block;margin-left: auto;margin-right: auto;margin-top: 20px;width: 50%"></img></div>
 <div class="box">
   <div class="container">
   <div class="grps"><a href="#early"><span style="font-weight:bold;font-size: 22px">Early Career</span></a>
