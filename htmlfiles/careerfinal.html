@@ -405,6 +405,7 @@ function myFunction() {
   }
 }
 mybutton = document.getElementById("myBtn");
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -414,8 +415,10 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+
 function topFunction() {
-  document.body.scrollTop = 0;
+  document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
 </script>
